@@ -1,0 +1,1 @@
+ALTER TABLE `transactions` ADD `is_reimbursable` integer DEFAULT false NOT NULL;
