@@ -9,7 +9,8 @@
     "db:seed": "npx tsx scripts/seed-demo.ts",
     "db:reset-demo": "rm -f data/finance.db && mkdir -p data && npx drizzle-kit push && npm run db:seed",
     "db:reset": "rm -f data/finance.db && mkdir -p data && npx drizzle-kit push",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "screenshots": "npx tsx scripts/screenshot.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.0",
@@ -37,6 +38,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.10",
+    "playwright": "^1.59.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
